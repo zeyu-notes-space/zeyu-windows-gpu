@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+plugin_root=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+config_path="${WINDOWS_GPU_CONFIG:-$HOME/.config/windows-gpu/client.json}"
+python_path=$(/usr/bin/python3 -c 'import json,sys; print(json.load(open(sys.argv[1]))["client_python"])' "$config_path")
+exec "$python_path" "$plugin_root/scripts/mcp_server.py"

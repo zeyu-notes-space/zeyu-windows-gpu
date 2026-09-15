@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "windows_gpu": {
+      "command": "./scripts/launch-mcp",
+      "args": [],
+      "cwd": ".",
+      "startup_timeout_sec": 10,
+      "tool_timeout_sec": 360,
+      "default_tools_approval_mode": "approve",
+      "env_vars": [
+        "WINDOWS_GPU_CONFIG"
+      ]
+    }
+  }
+}

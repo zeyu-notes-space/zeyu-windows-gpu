@@ -1,0 +1,13 @@
+{
+  "client_python": "<absolute-python-path>",
+  "ssh_config": "<private-ssh-config-path>",
+  "ssh_host": "<windows-host>",
+  "token_file": "<private-token-file>",
+  "artifact_root": "<artifact-output-directory>",
+  "known_projects": ["<project-alias>"],
+  "known_environments": ["<environment-alias>"],
+  "bento_url": "http://127.0.0.1:29876",
+  "fabric_url": "http://127.0.0.1:28765",
+  "offline_timeout_seconds": 8,
+  "request_timeout_seconds": 120
+}

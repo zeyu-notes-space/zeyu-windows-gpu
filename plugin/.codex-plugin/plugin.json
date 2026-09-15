@@ -1,0 +1,27 @@
+{
+  "name": "windows-gpu",
+  "version": "0.1.0",
+  "description": "Mac 上明确选择后使用 Windows RTX 5070 Ti：音频推理、批任务与结果回收。",
+  "author": {
+    "name": "ZeYu"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Windows GPU",
+    "shortDescription": "使用你的 Windows 5070 Ti，结果返回当前 Mac。",
+    "longDescription": "选择 Windows GPU 后直接描述任务。单音频推理与长期计算自动路由，保留真实日志、指标和结果。未选择时不访问 Windows。",
+    "developerName": "ZeYu",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "5070 Ti 现在在线吗？",
+      "用 UNet 处理这个 WAV。",
+      "用 5070 Ti 跑这组 benchmark。"
+    ],
+    "brandColor": "#17876C"
+  },
+  "mcpServers": "./.mcp.json"
+}

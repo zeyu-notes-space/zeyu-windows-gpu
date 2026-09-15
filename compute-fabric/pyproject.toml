@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zeyu-compute-fabric"
+version = "0.1.1"
+description = "A durable personal Windows compute worker controlled from a Mac"
+requires-python = ">=3.9"
+dependencies = ["psutil==7.2.2"]
+
+[project.scripts]
+zrun = "zeyu_fabric.cli:main"
+zrun-worker = "zeyu_fabric.server:main"
+
+[tool.setuptools.packages.find]
+include = ["zeyu_fabric*"]

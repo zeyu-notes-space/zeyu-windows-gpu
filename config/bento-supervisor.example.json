@@ -1,0 +1,14 @@
+{
+  "name": "bento",
+  "state_dir": "<protected-state-directory>",
+  "log_dir": "<protected-log-directory>",
+  "gpu_lease_path": "<shared-gpu-lease-path>",
+  "cwd": "<bento-service-directory>",
+  "command": ["<cuda-python>", "-u", "-m", "bentoml", "serve", "service:svc", "--host", "127.0.0.1", "--port", "9876", "--production"],
+  "env": {
+    "ZEYU_BENTO_TOKEN_FILE": "<protected-token-file>",
+    "ZEYU_BENTO_ARTIFACT_ROOT": "<artifact-directory>",
+    "ZEYU_UNET_ADAPTER": "<python-module>:<factory>",
+    "ZEYU_TIGER_ADAPTER": "<python-module>:<factory>"
+  }
+}

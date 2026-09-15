@@ -1,0 +1,5 @@
+interface:
+  display_name: "Windows GPU"
+  short_description: "使用 Windows 5070 Ti，结果返回当前 Mac"
+policy:
+  allow_implicit_invocation: false
